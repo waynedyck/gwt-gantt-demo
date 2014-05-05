@@ -1,0 +1,10 @@
+.DS_Store
+.classpath
+.project
+.settings/
+target/
+.gwt/
+.buildpath
+bin/
+gwt-unitCache/
+www-test/
