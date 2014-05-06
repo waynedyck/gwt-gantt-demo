@@ -1,0 +1,46 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder
+    xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:t="urn:import:com.imaginedreal.gwtgantt.table"
+	xmlns:gantt="urn:import:com.imaginedreal.gwtgantt.gantt">
+	
+	<ui:style>
+	   .zoomInButton {
+	       position: absolute;
+	       top: 0px;
+	       right: 150px;
+        }
+        .zoomOutButton {
+	       position: absolute;
+	       top: 0px;
+	       right: 78px;
+        }
+	   .refreshButton {
+	       position: absolute;
+	       top: 0px;
+	       right: 0px;
+	   }
+	</ui:style>
+	
+	<g:DockLayoutPanel unit="PX">
+	   <g:north size="28">
+	       <g:FlowPanel>
+               <g:Button ui:field="zoomInButton" text="Zoom In" styleName="{style.zoomInButton}" />
+               <g:Button ui:field="zoomOutButton" text="Zoom Out" styleName="{style.zoomOutButton}" />
+	           <g:Button ui:field="refreshButton" text="Refresh" styleName="{style.refreshButton}" />
+	       </g:FlowPanel>
+	   </g:north>
+	   <g:center>
+	       <g:SplitLayoutPanel>
+		       <g:west size="500">
+		           <t:GridView ui:field="gridView" />
+		       </g:west>
+		       <g:center>
+		           <gantt:GanttChart ui:field="ganttChart" />
+		       </g:center>
+	       </g:SplitLayoutPanel>
+	   </g:center>
+    </g:DockLayoutPanel>
+
+</ui:UiBinder> 

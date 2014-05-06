@@ -10,7 +10,7 @@ public class GWTGanttDemoEntryPoint implements EntryPoint {
   
   @Override
   public void onModuleLoad() {
-    RootLayoutPanel.get().add(new DemoPanel());
+    RootLayoutPanel.get().add(new GanttDemoView());
   }
   
 }
