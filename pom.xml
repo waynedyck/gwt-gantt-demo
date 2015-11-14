@@ -5,13 +5,13 @@
     <groupId>com.imaginedreal.gwtganttdemo</groupId>
     <artifactId>gwt-gantt-demo</artifactId>
     <packaging>war</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.1-SNAPSHOT</version>
     <name>GWT Gantt Demo</name>
     <description>A demo webapp using the GWT-Gantt widget for GWT</description>
 
     <properties>
         <!-- GWT -->
-        <gwt.version>2.6.0</gwt.version>
+        <gwt.version>2.7.0</gwt.version>
         <gwt.style>OBF</gwt.style>
 
         <!-- Maven -->
@@ -107,13 +107,17 @@
             <artifactId>gwt-dev</artifactId>
             <version>${gwt.version}</version>
         </dependency>
-
         <!-- Testing -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.11</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.imaginedreal</groupId>
+            <artifactId>gwt-gantt</artifactId>
+            <version>1.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>
