@@ -1,4 +1,4 @@
-#GWT-Gantt-Demo
+# GWT-Gantt-Demo
 
 A simple demo showcasing use of the GWT-Gantt widget.
 
